@@ -6,7 +6,7 @@ html = response.read().decode('utf-8')
 
 clean = re.compile('<.*?>')
 text = re.sub(clean, '',html)
-print(text.strip())
+#print(text.strip())
 
 with open("scraping-text.txt", 'w') as f:
     f.write(text.strip())
